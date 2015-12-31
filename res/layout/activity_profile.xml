@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="665dp"
+        android:gravity="center"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Enter Name" />
+
+        <EditText
+            android:id="@+id/enter_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/enter_name"
+            android:layout_below="@+id/enter_name"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Mobile No"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/add1_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_mobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/street_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add1_Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Street Address" />
+
+        <EditText
+            android:id="@+id/enter_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street_Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/enter_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street_Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/enter_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street_Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Pincode" />
+
+        <Button
+            android:id="@+id/formDoneButton"
+            style="@style/btnStyleGenoa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Done" />
+    </LinearLayout>
+
+</ScrollView>

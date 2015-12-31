@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <EditText
+            android:id="@+id/login_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="Enter Login Id" />
+
+        <EditText
+            android:id="@+id/password_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/login_Id"
+            android:layout_alignRight="@+id/login_Id"
+            android:layout_below="@id/login_Id"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/loginButton_Id"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Login" />
+    </RelativeLayout>
+
+</ScrollView>
